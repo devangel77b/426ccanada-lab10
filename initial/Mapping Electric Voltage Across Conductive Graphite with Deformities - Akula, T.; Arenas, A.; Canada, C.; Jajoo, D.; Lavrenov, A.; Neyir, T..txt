@@ -1,0 +1,123 @@
+﻿Mapping Electric Voltage Across Conductive Graphite with Deformities
+
+
+Akula, T.; Arenas, A.; Canada, C.; Jajoo, D.; Lavrenov, A.; Neyir, T.
+January 30, 2026
+
+
+Abstract: 
+
+
+Non-destructive testing (NDT) methods are critical for evaluating the reliability of electrical components without damaging them, starting with the testing of the components’ materials and metallic surfaces. In this experiment, an electric current flowed through a conductive medium, and potential was measured. Defects were mimicked on the medium, and potential was measured again and compared. This study demonstrates how electrical measurements can reveal flaws without damaging the material.
+
+
+Introduction: 
+
+
+3D printing conductive materials, like metal, poses problems such as cracks, empty spaces, and non-uniform conductivity. To develop a non-destructive testing (NDT) technique to detect these flaws, we supplied a known current into a conductive object and measured the potential at certain locations, and again with gaps in the conductive material to measure the differences. This approach allows defects to be identified without damaging the material, making it suitable for non-destructive evaluation, and relies on the fact that electric potential changes predictably in an intact conductor.
+
+
+In this experiment, graphite paper simulates the printed conductive material, and current was applied using a 9-Volt battery connected to the graphite surface using paper clips. By erasing areas on the graphite surface, we simulated material defects and measured the resulting potentials. In a uniform conductive region, electric potential is expected to change gradually due to resistance along the material, while any sudden change in measured voltage indicates a disruption in current flow caused by a defect or discontinuity.
+
+
+We hypothesize that the uniform block of graphite will have an approximately linear scale between distance and voltage. For the non-uniform block of graphite with a crack in the center, we hypothesize that the electric potential will decrease after the crack due to the interruption of current flow. 
+
+
+Background:
+A battery provides an electric potential difference, which establishes an electric field within a circuit. This electric field drives an electric current through a wire, whose resistance causes energy to be dissipated along the path. When an electric potential is applied to a continuous wire, the electric potential changes gradually along the length of the wire due to its resistance. However, when the electric potential is interrupted by a discontinuity in the wire, charge can no longer move freely through that region. Instead, charge accumulates at the edges of the discontinuity, generating a strong electric field in the surrounding area. As a result, the current distribution near the discontinuity becomes uneven, with the current concentrating near the edges. A significant localized voltage drop is also produced at this point due to the interruption in the wire. Therefore, by measuring the electric potential at different points along the wire, discontinuities can be identified by observing sudden and abnormal changes in electric potential.
+Experimental Design: 
+
+
+The conductive medium consisted of graphite deposited on paper using a pencil, forming a rectangular conductive region 5 centimeters long and 1 centimeter wide. Electrical contact was made at opposite ends of the graphite using paper clips connected to a 9-volt battery.  This supplied a constant potential difference across the graphite surface. During voltage measurements, the negative probe of the multimeter was fixed to the negative terminal of the battery and defined as 0 volts (ground), while the positive probe was moved along the graphite starting at the 5 cm position and then at measured intervals.
+
+
+A digital multimeter was used to measure voltage and resistance. During voltage measurements, the negative probe was fixed to the negative electrode, serving as a reference ground, while the positive probe was placed at various locations along the conductive region.
+
+
+Two configurations were tested: a uniform 5 centimeters by 1 centimeter graphite region with no defects, and a 5 centimeters by 1 centimeter graphite region containing a 1 centimeter by 0.5 centimeter centered crack with a 1 centimeter by 0.25 centimeter bridge on either side. Voltage measurements were repeated to observe how the defect affected the electric potential across the conductor.
+
+
+Procedure: 
+
+
+First, graphite was applied evenly to the paper in a 5-centimeter by 1-centimeter box to form a conductive region at the edge of the paper. Paperclips were slid on that edge, touching each end of the box, allowing for electrodes to attach to the ends. The 9-volt battery was connected to establish a steady current flow, with the negative terminal defined as 0 V (ground). Voltage measurements were taken by moving the positive electrode at known distances from the reference electrode from right to left: 5, 4, 3, 2, and 1 centimeter(s). The total resistance of the graphite region was measured. In the center of the box, a crack of 1 centimeter by 0.5 centimeter was introduced, and the voltage measurements were repeated with an additional metric of 2.5 centimeters in the middle of the crack.
+
+
+Results: 
+  
+                                
+Distance (cm)
+	Expected Voltage (V)
+	Found Voltage (V)
+	0
+	0.0
+	0
+	1
+	1.8
+	1.69
+	2
+	2.9
+	2.84
+
+
+	2.5
+	3.6
+	4.62
+	3
+	5.4
+	5.26
+	4
+	7.2
+	7.12
+	5
+	9.0
+	8.98
+	
+
+
+
+
+
+  
+
+Distance (cm)
+	Region
+	Found Voltage (V)
+
+
+
+
+	0.0
+	Electrode
+	0
+	1.0
+	Intact
+	0.31
+	2.0
+	Start of crack
+	0.42
+	2.5
+	Mid-crack
+	3.51
+	3.0
+	End of crack
+	8.30
+	4.0
+	Intact
+	8.59
+	5.0
+	Electrode
+	9.00
+	
+
+
+
+Given the found voltage in our tests, we concluded that the uniform block of graphite matched our hypothesis through its linear pattern of relation between voltage and distance. We have failed to reject both of the null hypotheses, as our results have sufficiently described our hypothesis that we predicted that the graph would be linear with no deformities and fall off with deformities.  
+
+
+Discussion:
+
+
+
+
+A larger surface area for the graphite would have provided both positive and negative effects. While a larger, wider conductor has a larger cross-section on average, giving it a lower overall resistance. Depending on how well the conductor is made, a larger amount of imperfection is also likely due to the greater amount of error possible on a larger surface, further decreasing the resistance than within a smaller, more controlled area. There are also discrepancies involving the paper clips supplying the graphite surface with current. Only the tips of the paper clips were in contact with the graphite; had they been in more contact, the electric potential would be easily measured and more accurate.
