@@ -1,0 +1,11 @@
+1. This is a review of the manuscript "Mapping electric voltage across conductive graphite with deformities" by Akula, Arenas, Canada, Jajoo, Lavrenov, and Neyir. I recommend rejection.
+
+2. The title sounds like it is the deformities being used to map electric voltage; electric voltage is redundant, and this title gives no understanding of the findings or importance.
+
+3. The abstract is completely generic with no explanation of what the experimental system was nor the exact findings. It is almost as if someone wrote it without bothering to read or know the rest of the paper.
+
+4. The lack of drawings or pictures of the actual graphite geometries tested makes it very difficult to follow the methods. The actual measurements appear to only have been taken along a centerline transect of a 5x1 cm 2D domain. The "nonuniform block" appears to have been tested along the side, not the centerline but this is not explained anywhere. The methods here are not replicable. 
+
+5. The paper does not conform to the required sections for J S&E (introduction, methods and materials, results, discussion, acknowledgements, references). No references are provided. The tables given (and plots) use centimeter rather than meters and there are unexplained things like "expected voltage" versus "found voltage" and "trend line" (where no explanation of statistical methods is provided). No actual 2D mapping is provided.
+
+6. This paper is well below the level of effort expected. 
