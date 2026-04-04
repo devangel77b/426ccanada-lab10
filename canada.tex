@@ -1,10 +1,10 @@
-%\documentclass[10pt,journal,twoside]{IEEEtran} % for editor use only for final preprint
+\documentclass[10pt,journal,twoside]{IEEEtran} % for editor use only for final preprint
 
 % For initial draft
-\documentclass[10pt,draftcls,journal,onecolumn]{IEEEtran}
-\usepackage{endfloat}
+%\documentclass[10pt,draftcls,journal,onecolumn]{IEEEtran}
+%\usepackage{endfloat}
 %\usepackage[switch]{lineno}
-\usepackage{lineno}
+%\usepackage{lineno}
 
 \usepackage{float}
 \usepackage{placeins}
@@ -38,12 +38,12 @@ pdfauthor={\@author},
 pdfsubject={physics},
 pdfkeywords={\keywords}}}
 \IEEEoverridecommandlockouts
-\IEEEpubid{\thanks{\url{https://doi.org/10.64804/xxxxxxxx}}} % LEAVE FOR EDITOR
+\IEEEpubid{\makebox[\columnwidth]{10.64804/xxxxxxxx~\copyright~2026 J S\&E \hfill} \hspace{\columnsep}\makebox[\columnwidth]{ }}% LEAVE FOR EDITOR
 \makeatother
 
 
 \begin{document}
-\linenumbers % for editor use
+%\linenumbers % for editor use
 \maketitle
 
 \begin{abstract}
@@ -248,7 +248,8 @@ National Institute of Standards and Technology (NIST), “Graphite,” NIST Chem
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/akula.jpeg}}]{Tushaar Akula}
 is a student in the Science and Engineering Magnet Program at Manalapan High School.
 \end{IEEEbiography}
-
+\vspace{0.3in}
+\newpage
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/arenas.jpeg}}]{Miguel Arenas} is a student in the Science and Engineering Magnet Program at Manalapan High School.
 \end{IEEEbiography}
 
@@ -263,5 +264,6 @@ is a student in the Science and Engineering Magnet Program at Manalapan High Sch
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{figures/neyir.jpeg}}]{Timur Neyir} is a student in the Science and Engineering Magnet Program at Manalapan High School.
 \end{IEEEbiography}
+\vfill
 %\end{IEEEbiographynophoto}
 \end{document}
