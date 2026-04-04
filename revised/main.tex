@@ -1,0 +1,267 @@
+%\documentclass[10pt,journal,twoside]{IEEEtran} % for editor use only for final preprint
+
+% For initial draft
+\documentclass[10pt,draftcls,journal,onecolumn]{IEEEtran}
+%\usepackage{endfloat}
+%\usepackage[switch]{lineno}
+\usepackage{lineno}
+
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{cleveref}
+\crefname{equation}{}{}
+\Crefname{equation}{}{}
+\crefname{figure}{Fig.}{Figs.}
+\Crefname{figure}{Fig.}{Figs.}
+\crefname{table}{Table}{Tables}
+\Crefname{table}{Table}{Tables}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+
+\title{Detecting Defects in Conductive Graphite Using Voltage Measurements}
+\author{Tushaar Akula, Miguel Arenas, Cole Canada, Daivik Jajoo, Anton Lavrenov, and Timur Neyir\thanks{Author for correspondence: 226ccanada@frhsd.com}\thanks{Authors are with the Science \& Engineering Magnet Program, Manalapan High School, 20 Church Lane, Englishtown, NJ 07726, USA}}
+\date{January 30, 2026}
+\markboth{Journal of Science \& Engineering, Vol.~1, No.~2,~January 30, 2026}{Akula \MakeLowercase{\textit{et al.}}: Mapping Electric Voltage Across Conductive Graphite}
+\setcounter{page}{1} % LEAVE FOR EDITOR
+\newcommand{\keywords}{electric potential, non-destructive testing, graphite conductor, voltage mapping, defect detection, conductive medium, electric field, resistance, discontinuity, circuit reliability}
+\makeatletter
+\AtBeginDocument{
+\hypersetup{%
+pdftitle={\@title},
+pdfauthor={\@author},
+pdfsubject={physics},
+pdfkeywords={\keywords}}}
+%\IEEEoverridecommandlockouts
+%\IEEEpubid{\thanks{\url{https://doi.org/10.64804/xxxxxxxx}}} % LEAVE FOR EDITOR
+\makeatother
+
+
+\begin{document}
+\linenumbers % for editor use
+\maketitle
+
+\begin{abstract}
+Non-destructive testing (NDT) methods are critical for evaluating the reliability of electrical components without damaging them. This is especially useful for applications like 3D printed conductive parts, circuit testing, and detecting faults in electrical components. In this experiment, a 9V battery supplied an electric current through a conductive medium, a graphite surface from a No. 2 pencil, and the voltage was measured at multiple points of the surface. Defects were mimicked on the graphite by erasing a rectangular portion of the graphite, and voltage was measured. For the uniform surface, voltage changed approximately linearly with distance, while the surface containing a defect showed a quick change in voltage at the gap. These results demonstrate that voltage measurements can be used to detect defects in conductive materials, supporting their application in non-destructive testing.
+\end{abstract}
+
+\begin{IEEEkeywords}
+\keywords
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Non-destructive testing (NDT) methods are critical for evaluating the reliability of electrical components without damaging them, starting with the testing of the components’ materials and metallic surfaces. In this experiment, an electric current flowed through a conductive medium, and electric potential was measured. Defects were mimicked on the medium, and the electric potential was measured again and compared. This study demonstrates how electrical measurements can reveal flaws without damaging the material.
+
+\subsection{Background}
+
+A battery provides an electric potential difference, which establishes an electric field within a circuit. This electric field drives an electric current through a wire, whose resistance causes energy to be dissipated along the path. When an electric potential is applied to a continuous wire, the electric potential changes gradually along the length of the wire due to its resistance. Given by \cref{eq:vir,eq:res}:
+\begin{equation}
+V = IR
+\label{eq:vir}
+\end{equation}
+\begin{equation}
+R = \frac{\rho L}{A}
+\label{eq:res}
+\end{equation}
+However, when the electric potential is interrupted by a discontinuity in the wire or any electrical component, charge can no longer move freely through that region. This will create disruptions in a circuit, leading to unwanted failures. Instead, charge accumulates at the edges of the discontinuity, generating a strong electric field in the surrounding area. As a result, the current distribution near the discontinuity becomes uneven, with the current becoming more prominent near the edges. A significant localized voltage drop is also produced at this point due to the interruption in the wire. Therefore, by measuring the electric potential at different points along the wire, discontinuities can be identified by observing sudden and abnormal changes in electric potential. This is important to ensure that circuit components are not faulty, and circuits work as intended.
+
+Even though these principles are often considered for metal wires, they could also be implemented for conductive surfaces like graphite. In our experiment, graphite acts as our flat conductor, and any breaks can be detected by changes in voltage.
+
+\section{Methods and Materials}
+
+\subsection{Experimental Design}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.5\columnwidth]{new_experimental_procedure_illustration}
+\end{center}
+\caption{Illustration depicting setup for measuring voltage across the graphite surfaces.}
+\label{fig:setup}
+\end{figure}
+
+
+The conductive medium consisted of graphite deposited on paper using a No.~2 pencil, forming a rectangular conductive region \qty{0.05}{\meter} long and \qty{0.01}{\meter} wide. A uniform graphite distribution was ensured by pressing down hard with the pencil so current could flow uniformly across the entire surface. Electrical contact was made at opposite ends of the graphite using paper clips connected to a \qty{9}{\volt} battery. This supplied a constant potential difference across the graphite surface. During voltage measurements, the negative probe of the multimeter was fixed to the negative terminal of the battery and defined as \qty{0}{\volt} (ground), while the positive probe was moved along the graphite starting at the \qty{0}{\meter} position and then at measured intervals.
+
+A digital multimeter was used to measure voltage and resistance. During voltage measurements, the negative probe was fixed to the negative electrode, serving as a reference ground, while the positive probe was placed at various locations along the conductive region.
+
+All voltage measurements for both the uniform and the defect configuration were taken on the centerline of the graphite surface (\qty{0.0025}{\meter} vertically). We measured at points that were located at fixed distances along this centerline from one electrode. The same measurement positions were used for both the uniform surface and the surface containing a defect to allow for direct comparison.
+
+For the defect configuration at the gap where no conductive material was present, a direct centerline measurement could not be taken. Instead, measurements were taken at the edges of the gap on both sides, and this value was used to represent the voltage at that position.
+
+No measurements were taken off the centerline for any other points.
+
+Two configurations were tested: a uniform \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region with no defects, and a \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region containing a \qty{0.01}{\meter} by \qty{0.005}{\meter} centered gap, therefore making two \qty{0.0025}{\meter} bridges on either side. Voltage measurements were repeated to observe how the defect affected the electric potential across the conductor.
+
+This process was only done once; no repeated trials.
+
+\subsection{Procedure}
+
+First, we calculated expected voltage values using \( V = IR \) and \( R = \rho \frac{L}{A} \). Since resistance increases as the length of the material increases, the voltage also increases as you move along the graphite. This means the voltage changes in a linear way with distance. This gave us a baseline for what our results should look like for the uniform surface.
+
+Then, graphite was applied evenly to the paper by repeatedly drawing in a \qty{0.05}{\meter} by \qty{0.01}{\meter} box to form a conductive region at the edge of the paper. Paperclips were slid on that edge, touching each end of the box, allowing for electrodes to attach to the ends. The \qty{9}{\volt} battery was connected to establish a steady current flow, with the negative terminal defined as \qty{0}{\volt} (ground). Voltage measurements were taken by moving the positive electrode at known distances from the reference electrode from left to right: \qty{0.01}{\meter}, \qty{0.02}{\meter}, \qty{0.03}{\meter}, \qty{0.04}{\meter}, \qty{0.05}{\meter}. The total resistance of the graphite region was measured. In the center of the box, a gap of \qty{0.01}{\meter} by \qty{0.005}{\meter} was introduced, and the voltage measurements were repeated with an additional metric of \qty{0.025}{\meter} in the middle of the gap.
+
+\FloatBarrier
+\section{Results}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.8\columnwidth]{new_voltage_vs_distance.png}
+\end{center}
+\caption{Voltage vs. distance for the uniform surface and defect surface strips.}
+\label{fig:voltage}
+\end{figure}
+
+\cref{tab:control,tab:defect} show the voltage measurements for the uniform surface and defect surface, respectively.
+
+\begin{table}[H]
+\caption{Uniform surface.}
+\label{tab:control}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Distance (\unit{\centi\meter}) & Expected Voltage (\unit{\volt}) & Found Voltage (\unit{\volt}) \\
+\midrule
+0.0   & 0.0 & 0.00 \\
+1.0   & 1.8 & 1.69 \\
+2.0   & 2.9 & 2.84 \\
+2.5 & 3.6 & 4.62 \\
+3.0   & 5.4 & 5.26 \\
+4.0   & 7.2 & 7.12 \\
+5.0   & 9.0 & 8.98 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{table}[H]
+\caption{Defect surface.}
+\label{tab:defect}
+\begin{center}
+\begin{tabular}{ccc}
+\toprule
+Distance (\unit{\centi\meter}) & Region & Found Voltage (\unit{\volt}) \\
+\midrule
+0.0 & Electrode    & 0.00 \\
+1.0 & Intact       & 0.31 \\
+2.0 & Start of gap & 0.42 \\
+2.5 & Mid-gap      & 3.51 \\
+3.0 & End of gap   & 8.30 \\
+4.0 & Intact       & 8.59 \\
+5.0 & Electrode    & 9.00 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Given the found voltage in our tests, we concluded that the uniform block of graphite matched our hypothesis through its linear pattern of relation between voltage and distance. We have failed to reject both of the null hypotheses, as our results have sufficiently described our hypothesis that we predicted that the graph would be linear with no deformities and fall off with deformities.
+
+\section{Discussion}
+
+A larger surface area for the graphite would have provided both advantages. A larger, wider conductor has a greater cross-sectional area, resulting in a lower resistance. However, depending on how well the conductor is made, a larger amount of imperfection is also likely due to the greater amount of error possible on a larger surface, further decreasing the resistance than within a smaller, more controlled area. Additionally, there are also discrepancies involving the paper clips supplying the graphite surface with current: only the tips of the paper clips were in contact with the graphite; had they been in more contact, the electric potential would be easily measured and more accurate.
+
+Since the voltages had noticeable discrepancies at corresponding locations between the uniform block and the non-uniform block (Fig. 2), we successfully showed a non-destructive testing method using measurements of electric voltage to reveal defects in conductive materials.
+
+\section{Acknowledgement}
+
+Thank you to Tushaar Akula, Miguel Arenas, Cole Canada, Daivik Jajoo, Anton Lavrenov, and Timur Neyir for working on this lab. Furthermore, thank you Dr.\ E and all former examples for guiding us throughout this lab.
+
+\begin{thebibliography}{1}
+
+\bibitem{griffiths}
+D. J. Griffiths, \textit{Introduction to Electrodynamics}, 4th ed. Boston, MA: Pearson Education, 2013.
+
+\bibitem{tipler}
+P. A. Tipler and G. Mosca, \textit{Physics for Scientists and Engineers}, 6th ed. New York, NY: W.H. Freeman, 2007.
+
+\bibitem{davis}
+J. R. Davis, \textit{Non-Destructive Evaluation of Materials}. Materials Park, OH: ASM International, 2004.
+
+\bibitem{kittel}
+C. Kittel, \textit{Introduction to Solid State Physics}, 8th ed. Hoboken, NJ: Wiley, 2004.
+
+\bibitem{hyperphysics}
+HyperPhysics, “Electric Potential and Voltage,” Georgia State University. [Online]. Available: http://hyperphysics.phy-astr.gsu.edu. Accessed: Jan. 2026.
+
+\bibitem{nist}
+National Institute of Standards and Technology (NIST), “Graphite,” NIST Chemistry WebBook, SRD 69. [Online]. Available: https://webbook.nist.gov/cgi/cbook.cgi?ID=C7782425. Accessed: Mar. 2026.
+
+\end{thebibliography}
+
+% Suggested .bib entries:
+%
+% @book{griffiths,
+%   author    = {David J. Griffiths},
+%   title     = {Introduction to Electrodynamics},
+%   edition   = {4},
+%   publisher = {Pearson Education},
+%   address   = {Boston, MA},
+%   year      = {2013}
+% }
+%
+% @book{tipler,
+%   author    = {Paul A. Tipler and Gene Mosca},
+%   title     = {Physics for Scientists and Engineers},
+%   edition   = {6},
+%   publisher = {W.H. Freeman},
+%   address   = {New York, NY},
+%   year      = {2007}
+% }
+%
+% @book{davis:2004:nde,
+%   author    = {J. R. Davis},
+%   title     = {Non-Destructive Evaluation of Materials},
+%   publisher = {ASM International},
+%   address   = {Materials Park, OH},
+%   year      = {2004}
+% }
+%
+% @book{kittel,
+%   author    = {Charles Kittel},
+%   title     = {Introduction to Solid State Physics},
+%   edition   = {8},
+%   publisher = {Wiley},
+%   address   = {Hoboken, NJ},
+%   year      = {2004}
+% }
+%
+% @misc{hyperphysics,
+%   author       = {{HyperPhysics}},
+%   title        = {Electric Potential and Voltage},
+%   howpublished = {Georgia State University. [Online]. Available: \url{http://hyperphysics.phy-astr.gsu.edu}},
+%   note         = {Accessed: Jan. 2026}
+% }
+%
+% @misc{nist:graphite,
+%   author       = {{National Institute of Standards and Technology}},
+%   title        = {Electrical Conductivity of Graphite Materials},
+%   howpublished = {[Online]. Available: \url{https://www.nist.gov}},
+%   address      = {Gaithersburg, MD},
+%   note         = {Accessed: Jan. 2026}
+% }
+\begin{IEEEbiographynophoto}{}
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{tushaar.jpg}}]{Tushaar Akula}
+is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{miguel.jpg}}]{Miguel Arenas} is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{canada.jpg}}]{Cole Canada} is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{daivik.jpg}}]{Daivik Jajoo} is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{anton.jpg}}]{Anton Lavrenov} is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+
+\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{timur.jpg}}]{Timur Neyir} is a student in the Science and Engineering Magnet Program at Manalapan High School.
+\end{IEEEbiography}
+\end{IEEEbiographynophoto}
+\end{document}
