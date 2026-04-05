@@ -5,7 +5,7 @@ raw <- read.csv('fig2.csv',header=TRUE)
 data <- tibble(raw)
 
 fig2 <- ggplot(data,aes(x=x_cm/100,y=V,color=surface))+
-     geom_abline(intercept=0,slope=9/5,color="gray70")+
+     geom_abline(intercept=0,slope=9/0.05,color="gray70")+
      geom_hline(yintercept=0,color="gray70")+
      geom_point()+
      geom_line()+
