@@ -18,4 +18,4 @@ fig2 <- ggplot(data,aes(x=x_cm/100,y=V,color=surface))+
 	legend.title=element_blank(),
 	axis.title.y=element_text(margin=margin(t=0,r=8,b=0,l=0)))
 
-ggsave('fig2.svg',plot=fig2,width=3.4167,height=2,units="in")
+ggsave('fig2.svg',plot=fig2,width=3.5,height=2,units="in")
