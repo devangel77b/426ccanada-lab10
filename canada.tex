@@ -63,7 +63,7 @@ Previous researchers examined voltage measurements as a means to map equipotenti
 
 In this experiment, an electric current flowed through a conductive medium, and electric potential was measured \cite{griffiths:2013:introduction,kittel:2004:introduction,nave:2000:hyperphysics,tipler,barrons,openstax,knight:2017:physics}. Defects were mimicked on the medium, and the electric potential was measured again and compared. This study demonstrates how electrical measurements can reveal flaws without damaging the material. The methods here could be performed on the sufrace of a 3D printed metal part, or within the body during the printing process as a quality assurance and process feedback step. 
 
-\subsection{Background}
+\subsection*{Background}
 
 A battery provides an electric potential difference, which establishes an electric field within a circuit. This electric field drives an electric current through a wire, whose resistance causes energy to be dissipated along the path. When an electric potential is applied to a continuous wire, the electric potential changes gradually along the length of the wire due to its resistance, as given by \cref{eq:vir,eq:res} \cite{tipler,barrons,openstax,knight:2017:physics}:
 \begin{equation}
@@ -90,18 +90,19 @@ Even though these principles are often considered for metal wires, they could al
 Test surfaces are shown in \cref{fig:setup}.
 \begin{figure}
 \begin{center}
-\includegraphics[width=\columnwidth]{figures/new_experimental_procedure_illustration.png}
+%\includegraphics[width=\columnwidth]{figures/new_experimental_procedure_illustration.png}
+\includegraphics[width=\columnwidth]{figures/newfig.png}
 \end{center}
-\caption{Illustration depicting setup for measuring voltage across the graphite surfaces.}
+\caption{Setup for measuring voltage across the graphite surfaces. (A) Uniform graphite surface \qtyproduct{5x1}{\centi\meter} ready for testing. (B) Test connections to \qty{9}{\volt} battery and meter.}
 \label{fig:setup}
 \end{figure}
 
 The conductive medium consisted of graphite deposited on paper using a No.~2HB pencil (S\&E Teacher's Edition; Brooklyn, NY), forming a rectangular conductive region \qty{0.05}{\meter} long and \qty{0.01}{\meter} wide. A uniform graphite distribution was ensured by pressing down hard with the pencil so current could flow uniformly across the entire surface. Electrical contact was made at opposite ends of the graphite using paper clips connected to a \qty{9}{\volt} battery. This supplied a constant potential difference across the graphite surface. During voltage measurements, the negative probe of the multimeter was fixed to the negative terminal of the battery and defined as \qty{0}{\volt} (ground), while the positive probe was moved along the graphite starting at the \qty{0}{\meter} position and then at measured intervals.
 
-Two configurations were tested: a uniform \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region with no defects, and a \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region containing a \qty{0.01}{\meter} by \qty{0.005}{\meter} centered gap, therefore making two \qty{0.0025}{\meter} bridges on either side. %Voltage measurements were repeated to observe how the defect affected the electric potential across the conductor. This process was only done once; no repeated trials.
+Two configurations were tested as shown in \cref{fig:setup}B: a uniform \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region with no defects, and a \qty{0.05}{\meter} by \qty{0.01}{\meter} graphite region containing a \qty{0.01}{\meter} by \qty{0.005}{\meter} centered gap, therefore making two \qty{0.0025}{\meter} bridges on either side. %Voltage measurements were repeated to observe how the defect affected the electric potential across the conductor. This process was only done once; no repeated trials.
 
 \subsection{Voltage measurements}
-A digital multimeter (Fluke 106; Everett, WA) was used to measure voltage and resistance. During voltage measurements, the negative probe was fixed to the negative electrode, serving as a reference ground, while the positive probe was placed at various locations along the conductive region.
+A digital multimeter (Fluke 106; Everett, WA) was used to measure voltage and resistance. During voltage measurements, the negative probe was fixed to the negative electrode, serving as a reference ground, while the positive probe was placed at various locations along the conductive region. Connections are as shown in \cref{fig:setup}B. 
 
 All voltage measurements for both the uniform and the defect configuration were taken along the centerline of the graphite surface (\qty{0.0025}{\meter} vertically). Voltage measurements were taken by moving the test lead at known distances from the reference electrode from left to right: \qty{0.01}{\meter}, \qty{0.02}{\meter}, \qty{0.025}{\meter}, \qty{0.03}{\meter}, \qty{0.04}{\meter}, \qty{0.05}{\meter}. The same measurement positions were used for both the uniform surface and the surface containing a defect to allow for direct comparison. 
 
@@ -127,7 +128,7 @@ Data and analysis code for plots using R \cite{R,ggplot2} are available at \url{
 %\includegraphics[width=\columnwidth]{figures/new_voltage_vs_distance.png}
 \includesvg[width=\columnwidth]{fig2}
 \end{center}
-\caption{Voltage vs. distance for the uniform (blue) and defect (pink) surface strips. A linearly increasing voltage, predicted for the uniform surface, is also shown in light gray.}
+\caption{Voltage vs. distance for the uniform (blue) and defect (pink) surface strips. A linearly increasing voltage, predicted for the uniform surface, is also shown in light gray. Surface geometry is as shown in \cref{fig:setup}; data from \cref{tab:control,tab:defect}.}
 \label{fig:voltage}
 \end{figure}
 
